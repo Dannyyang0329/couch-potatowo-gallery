@@ -1,12 +1,7 @@
 {
+  "id": "post_000001",
   "title": "Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling",
-  "authors": "Unknown (Refer to Paper)",
+  "cover_title": "AI 繪圖進化論：從「像素拼貼」變成「創造世界」？🤯",
   "url": "https://arxiv.org/abs/2604.28185v1",
-  "hook": "AI 繪圖進化論：從「像素拼貼」變成「創造世界」？🤯",
-  "summary": "本文探討視覺生成如何從單純的像素分布學習 (Atomic Mapping) 演進到具備物理因果律的「世界模型」(World Modeling)。核心差異在於從追求『分布合理性』轉向『因果對齊 (Causal Alignment)』。",
-  "takeaways": [
-    "傳統 AI 是像素拼貼大師，新一代 AI 是物理世界模擬器。",
-    "世界模型的關鍵在於 Causal Alignment，讓 AI 理解物理因果。",
-    "視覺生成正從單純的 Rendering (渲染) 轉化為 Visual Reasoning (推理)。"
-  ]
+  "date": "2026-05-03"
 }

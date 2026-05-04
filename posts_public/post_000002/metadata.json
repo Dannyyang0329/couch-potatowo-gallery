@@ -1,13 +1,7 @@
 {
-  "paper_id": "2604.27003",
+  "id": "post_000002",
   "title": "When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents",
   "url": "https://arxiv.org/abs/2604.27003",
-  "core_contribution": "Proves that abstract insights in external memory prevent 'procedural mimicry' and facilitate better cross-task experience reuse compared to raw trajectories.",
-  "technical_intuition": "Raw trajectories lead to negative transfer due to task-specific procedural mismatch; abstract insights preserve functional guidance, enabling stability-plasticity balance.",
-  "visual_logic": {
-    "slide_1": "Contrast of large storage vs fragmented memory",
-    "slide_2": "Parametric update vs Memory-augmented retrieval",
-    "slide_3": "Raw Trajectory (Mimicry) vs Abstract Insight (Generalization)",
-    "slide_4": "Memory Quality > Memory Quantity"
-  }
+  "cover_title": "存記憶不等於學會了! AI為什麼變成了附讀機?",
+  "date": "2026-05-04"
 }
