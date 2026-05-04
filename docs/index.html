@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Couch Paper Gallery | couch._.potatowo</title>
+    <title>Couch Paper Gallery | AI PhD's Potato Cave</title>
+    <!-- Inject Swiper from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background animation elements -->
+    <div class="bg-animation">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
     <div class="container">
         <header>
-            <h1>🥔 Couch Paper Gallery</h1>
-            <p>快速跳轉至論文來源</p>
-            <div class="jump-box">
-                <input type="number" id="postNumber" placeholder="輸入貼文編號 (例如: 1)" pattern="\d*">
-                <button onclick="jumpToPaper()">Go!</button>
+            <div class="logo">🥔 Couch Paper Gallery</div>
+            <p class="subtitle">Quickly jump to the paper you want</p>
+            <div style="margin-top: 20px; margin-bottom: 30px;">
+                <a href="https://www.instagram.com/couch._.potatowo/" target="_blank" class="ig-btn">
+                    <span class="ig-icon">@</span> IG: couch._.potatowo
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <span class="search-icon">🚀</span>
+                    <input type="number" id="postNumber" placeholder="輸入論文編號 (e.g. 1)" onkeypress="handleKeyPress(event)" pattern="\d*">
+                    <button onclick="jumpToPaper()" class="jump-btn">
+                        <span>GO</span>
+                    </button>
+                </div>
             </div>
         </header>
 
         <main>
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Dynamically loaded cards -->
+            <!-- Swiper Carousel -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="carouselWrapper">
+                    <!-- Slides loaded dynamically -->
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </main>
         
         <footer>
-            <p>&copy; 2026 couch._.potatowo | AI PhD's Potato Cave</p>
+            <p>&copy; 2026 couch._.potatowo | 保持思考，拒絕當普通的沙發馬鈴薯</p>
         </footer>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
