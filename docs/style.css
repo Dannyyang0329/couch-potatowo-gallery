@@ -395,62 +395,66 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Modern IG Button */
-.ig-btn {
-    display: inline-flex;
-    align-items: center;
-    background: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 8px 25px;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(102, 252, 241, 0.2), inset 0 0 10px rgba(102, 252, 241, 0.1);
-    transition: all 0.3s ease;
-    font-family: 'Orbitron', 'Noto Sans TC', sans-serif;
-    letter-spacing: 1px;
-}
 
-.ig-btn:hover {
-    background: rgba(102, 252, 241, 0.1);
-    color: var(--text-bright);
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px rgba(102, 252, 241, 0.6), inset 0 0 15px rgba(102, 252, 241, 0.4);
-    border-color: var(--text-bright);
-}
 
-.ig-icon {
-    margin-right: 8px;
-    font-size: 1.2rem;
-}
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header { 
+        padding: 15px 0; 
+        margin-bottom: 10px; 
+    }
+    .logo { 
+        font-size: 1.8rem; 
+        margin-bottom: 5px; 
+    }
+    .subtitle { 
+        font-size: 0.9rem; 
+    }
+    .search-box {
+        padding: 5px 5px 5px 15px;
+        width: 95%;
+    }
+    .search-box input {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .search-box input::placeholder {
+        font-size: 0.85rem;
+    }
+    .jump-btn {
+        padding: 8px 18px;
+        font-size: 1rem;
+    }
+    .ig-btn {
+        font-size: 0.9rem;
+        padding: 6px 18px;
+        border-width: 1px;
+    }
+    .ig-icon {
+        font-size: 1rem;
+    }
+    
+    .swiper-slide {
+        width: 65vw;
+        height: calc(65vw * 1.4);
+        max-width: 250px;
+        max-height: 350px;
+    }
+    
+    .swiper {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 
-/* Enhanced Search Box */
-.search-box {
-    border: 2px solid var(--accent-color);
-    box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
-    padding: 8px 8px 8px 25px;
-    max-width: 500px;
-    animation: pulse 2s infinite alternate;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 15px rgba(102, 252, 241, 0.4); }
-    100% { box-shadow: 0 0 25px rgba(102, 252, 241, 0.8); }
-}
-
-.search-box input {
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.search-box input::placeholder {
-    font-size: 1.1rem;
-}
-
-.jump-btn {
-    padding: 12px 30px;
-    font-size: 1.2rem;
+    .post-number {
+        font-size: 1rem;
+        padding: 3px 10px;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+    }
 }
