@@ -1,5 +1,13 @@
 [
   {
+    "id": "post_000004",
+    "title": "Knowledge Capsules: Structured Nonparametric Memory Units for LLMs",
+    "cover_title": "別再塞文字了！給 AI 裝個『知識膠囊』💊",
+    "url": "https://arxiv.org/abs/2604.20487",
+    "date": "2026-05-05",
+    "cover_image": "posts_public/post_000004/images/cover.png"
+  },
+  {
     "id": "post_000003",
     "title": "When LLMs Stop Following Steps: A Diagnostic Study of Procedural Execution in Language Models",
     "url": "https://arxiv.org/abs/2605.00817",
